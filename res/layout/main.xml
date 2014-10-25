@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cccccc"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:id="@+id/params_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#cccccc" >
+
+	    <TextView
+	        android:id="@+id/params_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="0dp"
+	        android:layout_marginTop="0dp"
+	        android:text="@string/parameter_label_text"
+	        android:textColor="#000000"
+	        android:textStyle="bold" >
+	    </TextView>
+
+	    <EditText
+	        android:id="@+id/params_text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="0dp"
+	        android:layout_marginTop="0dp"
+	        android:clickable="true"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false"
+	        android:inputType="text"
+	        android:lines="1"
+	        android:maxLines="1"
+	        android:text="@string/tcpdump_params"
+	        android:textSize="12sp"
+	        android:background="#cccccc" >
+
+	        <!--
+                  android:text=" -Xvv -i any tcp[20:4]=0x47455420" 
+		          android:text=" -vvennSs 0 -i any tcp[20:2]=0x4745 or tcp[20:2]=0x4854"
+	        -->
+
+	    </EditText>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/buttons_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="2dp"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+
+		<ProgressBar
+		    android:id="@+id/running_progressbar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:layout_weight="0.02"
+		    android:background="#cccccc"
+		    android:indeterminate="true"
+		    android:visibility="invisible" >
+</ProgressBar>
+
+		<Button
+		    android:id="@+id/start_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_marginRight="0dp"
+		    android:layout_weight="0.1"
+		    android:background="#aaaaaa"
+		    android:text="@string/start_button_text"
+		    android:textStyle="bold" />
+
+		<Button
+		    android:id="@+id/stop_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.1"
+		    android:background="#bbbbbb"
+		    android:text="@string/stop_button_text"
+		    android:textStyle="bold" />
+
+	</LinearLayout>
+
+	<ListView
+	    android:id="@+id/listView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0"
+	    android:background="#000000" >
+	</ListView>
+
+</LinearLayout>

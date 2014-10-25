@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="#000000" >
+    
+     <TextView
+         android:id="@+id/RequestURLView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textStyle="bold"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         android:textColor="#ffffff"
+         android:text="@string/request_url"/>
+     
+     <TextView
+         android:id="@+id/urlView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:autoLink="web"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp" />
+     
+      <TextView
+         android:id="@+id/RequestMethodView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textStyle="bold"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         android:textColor="#ffffff"
+         android:text="@string/request_method_get"/>
+      
+       <TextView
+         android:id="@+id/StatusCodeView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textStyle="bold"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         android:textColor="#ffffff"
+         android:text="@string/status_code_200_ok"/>
+      
+     <TextView
+         android:id="@+id/RequestHeadersView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         android:textStyle="bold"
+         android:textColor="#ffffff"
+         android:text="@string/request_headers"/>
+     
+     <ScrollView
+	    android:id="@+id/SCROLLER_ID"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="vertical"
+	    android:fillViewport="true">  
+
+		    <TextView
+		        android:id="@+id/itemView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:clickable="true"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:textColor="#ffffff" />
+
+    </ScrollView>  
+
+</LinearLayout>
